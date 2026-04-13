@@ -1,0 +1,137 @@
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.karla {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#banner-color {
+    margin: 0px;
+    padding: 5px;
+    height: 125px;
+    background-color:rgb(154, 139, 236);
+    border: 5px hidden black;
+    text-align: center;
+    
+}
+
+.titles {
+    animation-name: spin;
+    margin: 0%;
+    height: 300px;
+    text-align: center;
+    font-weight: 400;
+    
+}
+
+.titles:hover{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+
+}
+
+#security-status {
+    text-align: center;
+    margin: 20px;
+    height: 150px;
+    width: auto;
+    border: 5px solid black;
+    border-radius: 2px solid black;
+    flex-wrap: wrap;
+    animation-name: pulse-green;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+ @keyframes pulse-green {
+        from {background-color: lightblue}
+        to {background-color: lightgreen;}
+    }
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 250px;
+    width: 235px;
+    border: 5px solid purple; 
+    background-color:springgreen;
+
+    /* transition notes! 
+    transition-property: all;
+    transition-duration: 2;
+    transition-timing-function: ease-out;
+    transition-delay: 10;
+    */
+
+}
+
+#health-check {
+    order: 1;
+}
+
+#health-check:hover {
+    width: 375px;
+    transition-delay: 0.5s;
+    transition-duration: 2s;
+}
+
+#performance {
+    order: 2;
+}
+
+#performance:hover {
+    border-radius: 20px;
+    height:100px;
+    width: 400px;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+
+#internal-notes {
+    background-color: coral;
+    order: 3; 
+    
+}
+
+#internal-notes:hover {
+    width: 550px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    transition-delay: 0.5s;
+    transition-duration: 2s;
+}
+
+body {
+    background-color:lightblue;
+}
